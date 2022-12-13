@@ -69,6 +69,8 @@ Write an efficient method that takes a sorted input array of n elements and:
 1. Returns true if there are at least k positive elements in the array; otherwise return false
 2. Returns the number of positive elements in the array
 
+</details>
+
 <details>
   <summary><h2>SieveOfEratosthenes<h2></summary>
   
