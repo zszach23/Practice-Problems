@@ -57,7 +57,7 @@ conventions, 0 <= numVertices <= 26.
 <details>
   <summary><h2>LinkedList<h2></summary>
   
-Implements a linked list data structure in Java
+Implements a linked list data structure in Java that can hold any Comparable data type
 
 </details>
 

@@ -1,22 +1,25 @@
-class Node
+class Node<AnyType>
 {
-    int data;
-    Node next;
+    AnyType data;
+    Node<AnyType> next;
 
-    Node(int data)
+    Node(AnyType data)
     {
         this.data = data;
+        next = null;
     }
 }
 
-public class LinkedList
+// Linked List that can hold any Comparable data type
+public class LinkedList<AnyType extends Comparable<AnyType>>
 {
-    private Node head, tail;
+    private Node<AnyType> head, tail;
 
-    public void headInsert(int data)
+    public void headInsert(AnyType data)
     {
-        Node newNode = new Node(data);
+        Node<AnyType> newNode = new Node<>(data);
         newNode.next = head;
+        head = newNode;
 
         if (tail == null)
         {
@@ -24,9 +27,9 @@ public class LinkedList
         }
     }
 
-    public void tailInsert(int data)
+    public void tailInsert(AnyType data)
     {
-        Node newNode = new Node(data);
+        Node<AnyType> newNode = new Node<>(data);
 
         if (head == null)
         {
@@ -39,9 +42,9 @@ public class LinkedList
         }
     }
 
-    public Integer deleteHead()
+    public AnyType deleteHead()
     {
-        int retval;
+        AnyType retval;
 
         if (head == null)
         {
@@ -60,10 +63,10 @@ public class LinkedList
         
     }
 
-    public Integer deleteTail()
+    public AnyType deleteTail()
     {
-        int retval;
-        Node temp;
+        AnyType retval;
+        Node<AnyType> temp;
 
         if (tail == null)
         {
@@ -78,7 +81,7 @@ public class LinkedList
             return retval;
         }
 
-        for (temp = head; temp != null; temp = temp->next)
+        for (temp = head; temp != null; temp = temp.next)
         {
             if (temp.next == tail)
             {
@@ -102,7 +105,7 @@ public class LinkedList
 
     public void printList()
     {
-        for (Node temp = head; temp != null; temp = temp.next)
+        for (Node<AnyType> temp = head; temp != null; temp = temp.next)
         {
             System.out.print(temp.data + ((temp.next == null) ? "\n" : " --> "));
         }
