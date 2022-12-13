@@ -61,7 +61,7 @@ Implements a linked list data structure in Java
 
 </details>
 
-</details>
+<details>
   <summary><h2>PositiveCount<h2></summary>
 
 Write an efficient method that takes a sorted input array of n elements and:
