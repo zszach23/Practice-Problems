@@ -96,6 +96,20 @@ My implementation of a Linked List that can store any Comparable data type. Meth
   
   </details>
 
+  <details>
+    <summary><h3>Stack<h3></summary>
+
+Implementation of a Stack data structure using the Generic Linked List file above. Methods include:
+
+* *Stack Constructor*
+* *push*
+* *pop*
+* *peek*
+* *isEmpty*
+* *isFull*
+
+  </details>
+
 </details>
 
 <details>
