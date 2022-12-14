@@ -10,6 +10,25 @@ Given a sorted array, determines if there is a duplicate value in the array
 </details>
 
 <details>
+  <summary><h2>Dynamic Programming<h2></summary>
+
+<details>
+  <summary><h3>Fibonnaci<h3></summary>
+
+Recursive, Memoized, and DP solutions to find the nth Fibonacci number
+
+To run:
+```
+javac Fibonacci.java
+
+java Fibonacci *n1 n2 ...*
+```
+
+</details>
+
+</details>
+
+<details>
   <summary><h2>Graphs<h2></summary>
   
 <details>
