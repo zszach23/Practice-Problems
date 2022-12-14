@@ -1,3 +1,12 @@
+// Zach Sally
+// December 14, 2022
+
+// =====================
+// |  LinkedList.java  |
+// =====================
+
+// My implementation of a linked list that can store any Comparable data type
+
 class Node<AnyType>
 {
     AnyType data;
