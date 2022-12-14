@@ -23,6 +23,7 @@ class Node<AnyType>
 public class LinkedList<AnyType extends Comparable<AnyType>>
 {
     private Node<AnyType> head, tail;
+    private int size = 0;
 
     // Insert data at the head of the list
     public void headInsert(AnyType data)
@@ -35,6 +36,8 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
         {
             tail = newNode;
         }
+
+        this.size++;
     }
 
     // Insert data at the tail of the list
@@ -51,6 +54,8 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
             tail.next = newNode;
             tail = newNode;
         }
+
+        this.size++;
     }
 
     // Delete the data held at the head of the list
@@ -71,6 +76,8 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
             tail = null;
         }
 
+        this.size--;
+
         return retval;
     }
 
@@ -85,6 +92,7 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
             return null;
         }
 
+        this.size--;
         retval = tail.data;
 
         // Head only ever equals tail if there is one element in list
@@ -113,6 +121,7 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
     //       to insert data in sorted order
     public void sortedInsert(AnyType data)
     {
+        this.size++;
         if (head == null)
         {
             head = tail = new Node<>(data);
@@ -165,19 +174,8 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
         }
     }
 
-    public static void main(String [] args)
+    public AnyType getHeadData()
     {
-        LinkedList<Integer> list = new LinkedList<>();
-
-        // 5 10 5 11 2
-        list.headInsert(5);
-        list.headInsert(10);
-        list.tailInsert(11);
-        list.tailInsert(2);
-        list.sortedInsert(2);
-        
-        list.printList();
-        System.out.println(list.deleteTail());
-        list.printList();
+        return (head == null) ? null : head.data;
     }
 }
