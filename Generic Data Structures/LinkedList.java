@@ -171,4 +171,9 @@ public class LinkedList<AnyType extends Comparable<AnyType>>
     {
         return (head == null) ? null : head.data;
     }
+
+    public AnyType getTailData()
+    {
+        return (tail == null) ? null : tail.data;
+    }
 }
