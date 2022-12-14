@@ -12,6 +12,9 @@ Given a sorted array, determines if there is a duplicate value in the array
 <details>
   <summary><h2>Dynamic Programming<h2></summary>
 
+A collection of Dynamic Programming problems. In each of the files, I provide  recursive, memoized, dp, and 
+any dp optimization solutions to the problem at hand.
+
 <details>
   <summary><h3>Fibonnaci<h3></summary>
 
