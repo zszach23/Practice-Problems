@@ -36,6 +36,8 @@ Determines if a given sorted array has 1 or 2 values that sum up to a target val
 
 </details>
 
+</details>
+
 <details>
   <summary><h2>Dynamic Programming<h2></summary>
 
