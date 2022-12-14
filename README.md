@@ -3,9 +3,36 @@
 A collection of problems used to practice data structure and algorithm design.
 
 <details>
-  <summary><h2>Duplicate<h2></summary>
+  <summary><h2>Clever Thinking Algorithms<h2></summary>
+
+  <details>
+    <summary><h3>Duplicate<h3></summary>
   
 Given a sorted array, determines if there is a duplicate value in the array
+
+  </details>
+
+  <details>
+  <summary><h3>MCSS<h3></summary>
+
+Compute the maximal contiguous subsequence sum of a given array
+
+</details>
+
+<details>
+  <summary><h3>PositiveCount<h3></summary>
+
+Write an efficient method that takes a sorted input array of n elements and:
+
+1. Returns true if there are at least k positive elements in the array; otherwise return false
+2. Returns the number of positive elements in the array
+
+</details>
+
+<details>
+  <summary><h3>TargetSum<h3></summary>
+  
+Determines if a given sorted array has 1 or 2 values that sum up to a target value.
 
 </details>
 
@@ -127,23 +154,6 @@ Implementation of a Stack data structure using the Generic Linked List file abov
 </details>
 
 <details>
-  <summary><h2>MCSS<h2></summary>
-
-Compute the maximal contiguous subsequence sum of a given array
-
-</details>
-
-<details>
-  <summary><h2>PositiveCount<h2></summary>
-
-Write an efficient method that takes a sorted input array of n elements and:
-
-1. Returns true if there are at least k positive elements in the array; otherwise return false
-2. Returns the number of positive elements in the array
-
-</details>
-
-<details>
   <summary><h2>SieveOfEratosthenes<h2></summary>
   
 An algorithm that computes prime numbers that are at least double the previous prime value. This is used for hash table expansions when the hash table
@@ -152,10 +162,3 @@ becomes at least half full.
 This algorithm begins with values 0 through n, and "sieves" out the non-prime values until we are left with only prime values.
 
 </details>
-
-<details>
-  <summary><h2>TargetSum<h2></summary>
-  
-Determines if a given sorted array has 1 or 2 values that sum up to a target value. This algorithm uses a two-pointer approach to produce O(n) runtime with O(1)
-extra space.
-
