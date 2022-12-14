@@ -77,9 +77,24 @@ conventions, 0 <= numVertices <= 26.
 </details>
 
 <details>
-  <summary><h2>LinkedList<h2></summary>
+  <summary><h2>Generic Data Structures<h2></summary>
   
-Implements a linked list data structure in Java that can hold any Comparable data type
+  <details>
+    <summary><h3>LinkedList<h3></summary>
+
+My implementation of a Linked List that can store any Comparable data type. Methods include:
+
+* *Node Constructor*
+* *headInsert()*
+* *tailInsert()*
+* *deleteHead()*
+* *deleteTail()*
+* *sortedInsert()*
+* *isEmpty()*
+* *isFull()*
+* *printList()*
+  
+  </details>
 
 </details>
 
