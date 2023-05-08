@@ -53,14 +53,35 @@ A collection of programs that are meant to showcase software design principles w
   ```
   javac Diamond.java
 
-  java Diamond *n*
+  java Diamond n
   ```
 
   This folder also includes sample outputs that the program should print based on the certain test case.
 
-  * `output1.txt`- A diamond of width 7
+  * `output1.txt` - A diamond of width 7
   * `output2.txt` - Any diamond with non-positive width should print
   * `output3.txt` - Any diamond with even length should print
+
+</details>
+
+<details>
+  <summary><h3>Chevron<h3></summary>
+
+  * The first line of output contains *n* '@' symbols, followed immediately by *n* '*' symbols, followed immediately
+    by another *n* '@' symbols, followed by a newline character
+  * The following lines will be the same as the previous lines, but without the first character from that previous line.
+  * Pattern continues until the last line of output, which will contain a single '@' symbol, followed by a newline character.
+
+  To run:
+  ```
+  javac Chevron.java
+
+  java Chevron n
+  ```
+
+  This folder also includes sample outputs that the program should print based on the certain test case.
+  * `output1.txt` - Chevron of n = 2
+  * `output2.txt` - Chevron when passed a non-positive value
 
 </details>
 
