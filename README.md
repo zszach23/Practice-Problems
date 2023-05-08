@@ -57,10 +57,12 @@ A collection of programs that are meant to showcase software design principles w
   ```
 
   This folder also includes sample outputs that the program should print based on the certain test case.
-  
+
   * `output1.txt`- A diamond of width 7
   * `output2.txt` - Any diamond with non-positive width should print
   * `output3.txt` - Any diamond with even length should print
+
+</details>
 
 </details>
 
