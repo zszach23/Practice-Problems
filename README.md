@@ -44,7 +44,7 @@ Determines if a given sorted array has 1 or 2 values that sum up to a target val
 A collection of programs that are meant to showcase software design principles with different problems
 
   <details>
-    <summary><h3>Diamond<h3><summary>
+    <summary><h3>Diamond<h3></summary>
 
   Prints a diamond of odd, positive width to the terminal. Focus on Test-Driven Development, Functional Decomposition,
   DRY, and Self-Documenting code practices.
