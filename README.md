@@ -85,6 +85,24 @@ A collection of programs that are meant to showcase software design principles w
 
 </details>
 
+<details>
+  <summary><h3>Rando<h3></summary>
+
+Take two integer parameters, m and n, repeatedly get a random integer within the range
+of m through n (inclusively) until it has produced every value on the range of m through n
+at least once.
+
+This program acts as an exercise in automated testing.
+
+To run:
+```
+javac Rando.java
+
+java Rando lowBound highBound
+```
+
+</details>
+
 </details>
 
 
