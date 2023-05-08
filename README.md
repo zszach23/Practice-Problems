@@ -1,6 +1,6 @@
 # Practice-Problems
 
-A collection of problems used to practice data structure and algorithm design.
+A collection of problems used to practice data structure, algorithm, and general software design.
 
 <details>
   <summary><h2>Clever Thinking Algorithms<h2></summary>
@@ -37,6 +37,33 @@ Determines if a given sorted array has 1 or 2 values that sum up to a target val
 </details>
 
 </details>
+
+<details>
+  <summary><h2>Design Principles<h2></summary>
+
+A collection of programs that are meant to showcase software design principles with different problems
+
+  <details>
+    <summary><h3>Diamond<h3><summary>
+
+  Prints a diamond of odd, positive width to the terminal. Focus on Test-Driven Development, Functional Decomposition,
+  DRY, and Self-Documenting code practices.
+
+  To run:
+  ```
+  javac Diamond.java
+
+  java Diamond *n*
+  ```
+
+  This folder also includes sample outputs that the program should print based on the certain test case.
+  
+  * `output1.txt`- A diamond of width 7
+  * `output2.txt` - Any diamond with non-positive width should print
+  * `output3.txt` - Any diamond with even length should print
+
+</details>
+
 
 <details>
   <summary><h2>Dynamic Programming<h2></summary>
