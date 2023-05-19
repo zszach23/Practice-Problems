@@ -65,34 +65,40 @@ public class GraphAM
         if (numVertices < 1)
             return false;
 
-        Queue<Integer> nodes = new ArrayDeque<>();
         int [] color = new int[numVertices];
 
-        // Initialize queue
-        nodes.add(0);
-        color[0] = 1;
-
-        // Loop until we've seen all nodes
-        while (!nodes.isEmpty())
+        // Loop through every vertex because we may have a disconnected graph
+        for (int start = 0; start < numVertices; start++)
         {
-            // Process the current node
-            int node = nodes.remove();
+            if (color[start] != 0)
+                continue;
             
-            // Loop through its adjacent nodes
-            for (int i = 0; i < numVertices; i++)
+            // Initialize queue
+            Queue<Integer> nodes = new ArrayDeque<>();
+            nodes.add(start);
+            color[start] = 1;
+            
+            // Loop until we've seen all nodes
+            while (!nodes.isEmpty())
             {
-                if (matrix[node][i])
-                {
-                    // If there's an edge that has the same color as our current node,
-                    // then it is not 2-colorable, and therefore is not bipartite
-                    if (color[i] == color[node])
-                        return false;
+                int node = nodes.remove();
 
-                    // If we haven't colored this adjacent node, color it opposite add it to queue
-                    if (color[i] == 0)
+                // Loop through its adjacent nodes
+                for (int i = 0; i < numVertices; i++)
+                {
+                    if (matrix[node][i])
                     {
-                        color[i] = (color[node] == 1 ? 2 : 1);
-                        nodes.add(i);
+                        // If there's an edge that has the same color as our current node,
+                        // then it is not 2-colorable, and therefore is not bipartite
+                        if (color[i] == color[node])
+                            return false;
+
+                        // If we haven't colored this adjacent node, color it opposite add it to queue
+                        if (color[i] == 0)
+                        {
+                            color[i] = (color[node] == 1 ? 2 : 1);
+                            nodes.add(i);
+                        }
                     }
                 }
             }
