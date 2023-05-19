@@ -70,30 +70,37 @@ public class GraphAL
         if (numVertices < 1)
             return false;
         
-        Queue<Integer> nodes = new ArrayDeque<>();
         int [] color = new int[numVertices];
-        int startColor = 1;
-
-        color[0] = startColor;
-        nodes.add(0);
-
-        while (!nodes.isEmpty())
+        
+        // Loop through all vertices, as the graph may be disconnected
+        for (int start = 0; start < numVertices; start++)
         {
-            int node = nodes.remove();
+            // Visited node already
+            if (color[start] != 0)
+                continue;
+            
+            Queue<Integer> nodes = new ArrayDeque<>();
+            color[start] = 1;
+            nodes.add(start);
 
-            for (int i = 0; i < list.get(node).size(); i++)
+            while (!nodes.isEmpty())
             {
-                if (color[node] == color[list.get(node).get(i)])
-                    return false;
-                
-                if (color[list.get(node).get(i)] == 0)
+                int node = nodes.remove();
+
+                for (int i = 0; i < list.get(node).size(); i++)
                 {
-                    nodes.add(i);
-                    color[list.get(node).get(i)] = (color[node] == 1 ? 2 : 1);
+                    if (color[node] == color[list.get(node).get(i)])
+                        return false;
+
+                    if (color[list.get(node).get(i)] == 0)
+                    {
+                        nodes.add(i);
+                        color[list.get(node).get(i)] = (color[node] == 1 ? 2 : 1);
+                    }
                 }
             }
         }
-
+        
         return true;
     }
 
